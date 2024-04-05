@@ -154,3 +154,39 @@ button {
   height: 50px;
   border-radius: 50%;
 }
+
+
+
+/** Style rule for news letter section **/
+
+.news__letter{
+  display: flex;
+  padding: 6rem 5%;
+  justify-content: space-between;
+  background-color: var(--Desaturated-Blue);
+}
+
+.texts{
+  color: var(--Light-Grayish-Blue);
+  max-width: 500px;
+}
+
+.mail input{
+  padding: 1rem;
+  width: 90%;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 8px;
+}
+
+
+/** Style rule for footer section **/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 5%;
+  background-color: var(--Very-Dark-Blue);
+  color: var(--Light-Grayish-Blue);
+}
