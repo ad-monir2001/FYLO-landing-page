@@ -171,7 +171,7 @@ button {
   max-width: 500px;
 }
 
-.mail input{
+form input{
   padding: 1rem;
   width: 90%;
   border-radius: 8px;
