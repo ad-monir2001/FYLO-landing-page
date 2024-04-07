@@ -65,7 +65,8 @@ nav a {
   justify-content: space-between;
 }
 
-.hero img {
+.hero img,
+.service-img {
   width: 40%;
 }
 
@@ -117,68 +118,60 @@ button {
   background-position: center;
 }
 
-.service-img {
-  width: 40%;
-}
-
-.service__texts a{
+.service__texts a {
   color: var(--Moderate-Cyan);
-  border-bottom: 2px solid ;
+  border-bottom: 2px solid;
 }
 
-.card{
+.card {
   background-color: white;
   padding: 1.5rem;
   border-radius: 8px;
   margin-top: 1.5rem;
-  box-shadow: 1px -1px 10px ;
+  box-shadow: 1px -1px 10px;
   max-width: 400px;
 }
 
-.profile{
+.profile {
   display: flex;
   align-items: center;
 }
 
-.profile-text span{
+.profile-text span {
   display: block;
   margin-left: 1rem;
 }
-.profile-text .name{
+.profile-text .name {
   font-weight: bold;
 }
 
-
-.profile img{
+.profile img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
 
-
-
 /** Style rule for news letter section **/
 
-.news__letter{
+.news__letter {
   display: flex;
   padding: 6rem 5%;
   justify-content: space-between;
   background-color: var(--Desaturated-Blue);
 }
 
-.texts{
+.texts {
   color: var(--Light-Grayish-Blue);
   max-width: 500px;
 }
 
-form input{
+form input {
   padding: 1rem;
   width: 90%;
   border-radius: 8px;
   border: none;
   margin-bottom: 8px;
 }
-
 
 /** Style rule for footer section **/
 
@@ -189,4 +182,60 @@ footer {
   padding: 5rem 5%;
   background-color: var(--Very-Dark-Blue);
   color: var(--Light-Grayish-Blue);
+}
+
+/** Breakpoints **/
+
+@media screen and (max-width: 375px) {
+  .header img {
+    width: 25%;
+  }
+
+  .hero,
+  .service {
+    flex-direction: column-reverse;
+  }
+
+  .hero img,
+  .service-img {
+    width: 90%;
+  }
+
+  .hero__texts input {
+    padding: 0.8rem;
+    width: 100%;
+    border: 1px solid ;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .service {
+    background: url(./images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 2rem 0;
+  }
+
+  .service__texts  {
+    text-align: center;
+    padding: 4rem 5%;
+  }
+
+  .news__letter {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+  }
 }
